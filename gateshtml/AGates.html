@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <title>Dutch Airport Pushback Procedures</title>
+  <meta name="description" content="Our first page">
+  <meta name="keywords" content=" ">
+</head>
+<body bgcolor="#989898">
+  <p><input type = "button" id = "btnApply" value = "Go Back" onclick="loadPage()"></p>
+  <p>
+    <label for="A Gates">Choose a platform:</label>
+    <select name="A Gates" id="A Gates" onchange="showPDF()">
+      <option value="C:/NL-pushback-html/pdfs/AGates/A31.pdf">A31</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A32.pdf">A32</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A33.pdf">A33</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A34.pdf">A34</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A35.pdf">A35</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A41.pdf">A41</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A42.pdf">A42</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A43.pdf">A43</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A44.pdf">A44</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A45.pdf">A45</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A51.pdf">A51</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A52.pdf">A52</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A53.pdf">A53</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A54.pdf">A54</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A55.pdf">A55</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A61.pdf">A61</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A62.pdf">A62</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A63.pdf">A63</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A64.pdf">A64</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A65.pdf">A65</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A71.pdf">A71</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A72.pdf">A72</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A73.pdf">A73</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A74.pdf">A74</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A75.pdf">A75</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A82.pdf">A82</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A83.pdf">A83</option>
+      <option value="C:/NL-pushback-html/pdfs/AGates/A84.pdf">A84</option>
+    </select>
+  </p>
+  <p id="demo"></p>
+  <embed id="pdf" src="C:/NL-pushback-html/pdfs/AGates/A31.pdf" width="100%" height="600"></embed>
+
+  <script>
+    function showPDF() {
+      var x = document.getElementById("A Gates").value;
+      document.getElementById("pdf").src = x;
+    }
+    function loadPage()
+    {
+
+      window.location="C:\NL-pushback-html/main.html";
+
+    }
+  </script>
+</body>
+</html>

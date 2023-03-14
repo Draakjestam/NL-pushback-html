@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" content="notranslate">
+<head>
+  <title>Dutch Airport Pushback Procedures</title>
+  <meta name="description" content="Our first page">
+  <meta name="keywords" content=" ">
+  <meta name="google" content="notranslate" > 
+</head>
+<body bgcolor="#989898">
+  <p><input type = "button" id = "btnApply" value = "Go Back" onclick="loadPage()"></p>
+  <p>
+    <label for="B Gates">Choose a Gate:</label>
+    <select name="B Gates" id="B Gates" onchange="myFunction()">
+      <option value="C:/NL-pushback-html/pdfs/BGates/B15.pdf">B15</option> <!--Let op! Pushback komt in klaring van C6 -->
+      <option value="C:/NL-pushback-html/pdfs/BGates/B16.pdf">B16</option> 
+      <option value="C:/NL-pushback-html/pdfs/BGates/B17.pdf">B17</option> <!-- Let op! Pushback komt in klaring van C6-->
+      <option value="C:/NL-pushback-html/pdfs/BGates/B20.pdf">B20</option>  
+      <option value="C:/NL-pushback-html/pdfs/BGates/B23.pdf">B23</option> 
+      <option value="C:/NL-pushback-html/pdfs/BGates/B24.pdf">B24</option> 
+      <option value="C:/NL-pushback-html/pdfs/BGates/B27.pdf">B27</option> 
+      <option value="C:/NL-pushback-html/pdfs/BGates/B28.pdf">B28</option> 
+      <option value="C:/NL-pushback-html/pdfs/BGates/B31.pdf">B31</option> 
+      <option value="C:/NL-pushback-html/pdfs/BGates/B32.pdf">B32</option> 
+      <option value="C:/NL-pushback-html/pdfs/BGates/B35.pdf">B35</option> 
+      <option value="C:/NL-pushback-html/pdfs/BGates/B36.pdf">B36</option> 
+      <option value="C:/NL-pushback-html/pdfs/BGates/B91.pdf">B91</option> 
+      <option value="C:/NL-pushback-html/pdfs/BGates/B92.pdf">B92</option> 
+      <option value="C:/NL-pushback-html/pdfs/BGates/B93.pdf">B93</option> 
+      <option value="C:/NL-pushback-html/pdfs/BGates/B94.pdf">B94</option> 
+      <option value="C:/NL-pushback-html/pdfs/BGates/B94.pdf">B95</option> 
+    </select>
+  </p>
+  <p id="demo"></p>
+  <embed id="pdf" src="C:/NL-pushback-html/pdfs/BGates/B15.pdf" width="90%" height="1000"></embed>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("B Gates").value;
+      document.getElementById("pdf").src = x;
+    }
+    function loadPage()
+    {
+
+        window.location="C:\NL-pushback-html/main.html";
+
+    }
+  </script>
+</body>
+</html>

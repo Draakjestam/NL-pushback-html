@@ -1,26 +1,33 @@
 <!doctype html>
-<html>
+<html lang="en" content="notranslate">
 <head>
   <title>Dutch Airport Pushback Procedures</title>
   <meta name="description" content="Our first page">
   <meta name="keywords" content=" ">
+  <meta name="google" content="notranslate" > 
 </head>
 <body bgcolor="#989898">
+  <p><input type = "button" id = "btnApply" value = "Go Back" onclick="loadPage()"></p>
   <p>
     <label for="Y Platform">Choose a platform:</label>
     <select name="Y Platform" id="Y Platform" onchange="myFunction()">
-      <option value="test/DV-Schiphol-Ground-Manual-V2.pdf" selected>Y71</option>
-      <option value="test/DV Schiphol Delivery Manual V2.pdf">Y73</option> 
+      <option value="C:/NL-pushback-html/pdfs/YPlatform/Y71.pdf" selected>Y71</option>
+      <option value="C:/NL-pushback-html/pdfs/YPlatform/Y73.pdf">Y73</option> 
     </select>
   </p>
   <p id="demo"></p>
-  <embed id="pdf" src="test/DV-Schiphol-Ground-Manual-V2.pdf" width="100%" height="600"></embed>
+  <embed id="pdf" src="C:/NL-pushback-html/pdfs/YPlatform/Y71.pdf" width="90%" height="1000"></embed>
 
   <script>
     function myFunction() {
       var x = document.getElementById("Y Platform").value;
       document.getElementById("pdf").src = x;
-      document.getElementById("demo").innerHTML = "Showing " + x;
+    }
+    function loadPage()
+    {
+
+        window.location="C:\NL-pushback-html/main.html";
+
     }
   </script>
 </body>

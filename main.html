@@ -1,49 +1,19 @@
 <!doctype html>
-<html>
-  
+<html lang="en" content="notranslate">
 <head>
-<title>Dutch Airport Pushback Procedures</title>
-<meta name="description" content="Our first page">
-<meta name="keywords" content=" ">
+  <title>Dutch Airport Pushback Procedures</title>
+  <meta name="description" content="Our first page">
+  <meta name="keywords" content=" ">
+  <meta name="google" content="notranslate" > 
 </head>
 <body>
   <body bgcolor="#989898"></body>
+<p>Select the platform/gates</p>
 <p>
-Content goes here.
+<input type = "button" id = "btnApply" value = "A Gates" onclick="loadPageAGates()">
+<input type = "button" id = "btnApply" value = "B Gates" onclick="loadPageBGates()">
+<input type = "button" id = "btnApply" value = "Y Platform" onclick="loadPageYPlatform()">
 </p>
-<p>
-<label for="A Gates">Choose a gate:</label>
-<select name="A Gates" id="A Gates">
-  <option value="a31">A31</option>
-  <option value="a32">A32</option>
-  <option value="a33">A33</option>
-  <option value="a34">A34</option>
-  <option value="a35">A35</option>
-  <option value="a41">A41</option>
-  <option value="a42">A42</option>
-  <option value="a43">A43</option>
-  <option value="a44">A44</option>
-  <option value="a45">A45</option>
-  <option value="a51">A51</option>
-  <option value="a52">A52</option>
-  <option value="a53">A53</option>
-  <option value="a54">A54</option>
-  <option value="a55">A55</option>
-  <option value="a61">A61</option>
-  <option value="a62">A62</option>
-  <option value="a63">A63</option>
-  <option value="a64">A64</option>
-  <option value="a65">A65</option>
-  <option value="a71">A71</option>
-  <option value="a72">A72</option>
-  <option value="a73">A73</option>
-  <option value="a74">A74</option>
-  <option value="a75">A75</option>
-  <option value="a82">A82</option>
-  <option value="a83">A83</option>
-  <option value="a84">A84</option>
-</select><!-- -->
-<p>
 <p>
 <label for="B Gates">Choose a gate:</label>
 <select name="B Gates" id="B Gates">
@@ -349,6 +319,18 @@ Content goes here.
 function myFunction() {
   var x = document.getElementById("Y Platform").value;
   document.getElementById("demo").innerHTML = pdf
+}
+function loadPageYPlatform()
+{
+     window.location="gateshtml/YPlatform.html";
+}
+function loadPageAGates()
+{
+     window.location="gateshtml/AGates.html";
+}
+function loadPageBGates()
+{
+     window.location="gateshtml/BGates.html";
 }
 </script>
 </body>
