@@ -7,10 +7,6 @@
 <meta name="keywords" content=" ">
 </head>
 <body>
-  <body>
-    <h1>PDF Example with iframe</h1>
-    <embed src="test/DV-Schiphol-Ground-Manual-V2.pdf" type="application/pdf"   height="700px" width="1000"></embed>
-  </body>
   <body bgcolor="#989898"></body>
 <p>
 Content goes here.
@@ -341,11 +337,19 @@ Content goes here.
   </select>
   <p>
   <p>
-    <label for="Y Platform">Choose a platform:</label>
-    <select name="Y Platform" id="Y Platform">
+    <label for="Y Platform" >Choose a platform:</label>
+    <select name="Y Platform" id="Y Platform" onchange="myFunction()">
       <option value="y71">Y71</option>
       <option value="y73">Y73</option> 
   </select>
   <p>
+  <p id="demo"></p>
+  <embed id = 'pdf' src="test/DV-Schiphol-Ground-Manual-V2.pdf"></embed>
+<script>
+function myFunction() {
+  var x = document.getElementById("Y Platform").value;
+  document.getElementById("demo").innerHTML = pdf
+}
+</script>
 </body>
 </html>
