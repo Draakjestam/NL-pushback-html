@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" content="notranslate">
+<head>
+  <title>Dutch Airport Pushback Procedures</title>
+  <meta name="description" content="Our first page">
+  <meta name="keywords" content=" ">
+  <meta name="google" content="notranslate" > 
+</head>
+<body bgcolor="#989898">
+  <p><input type = "button" id = "btnApply" value = "Go Back" onclick="loadPage()"></p>
+  <p>
+    <label for="G Gates">Choose a gate:</label>
+    <select name="G Gates" id="G Gates" onchange="myFunction()">
+        <option value="C:/NL-pushback-html/pdfs/GGates/G2.pdf">G2</option>
+        <option value="C:/NL-pushback-html/pdfs/GGates/G3tmCat4.pdf">G3 tm Cat.4</option> 
+        <option value="C:/NL-pushback-html/pdfs/GGates/G3vanafCat5.pdf">G3 vanaf Cat.5</option> <!-- Let op! Pushback komt in klaring van C6-->
+        <option value="C:/NL-pushback-html/pdfs/GGates/G4tmCat5.pdf">G4 tm Cat.5</option>  
+        <option value="C:/NL-pushback-html/pdfs/GGates/G4vanafCat6.pdf">G4 vanaf Cat.6</option> 
+        <option value="C:/NL-pushback-html/pdfs/GGates/G5tmCat4.pdf">G5 tm Cat.4</option> 
+        <option value="C:/NL-pushback-html/pdfs/GGates/G5vanafCat5.pdf">G5 vanaf Cat.5</option> 
+        <option value="C:/NL-pushback-html/pdfs/GGates/G6.pdf">G6</option> 
+        <option value="C:/NL-pushback-html/pdfs/GGates/G7tmCat4.pdf">G7 tm Cat.4</option> 
+        <option value="C:/NL-pushback-html/pdfs/GGates/G7vanafCat5.pdf">G7 vanaf Cat.5</option> 
+        <option value="C:/NL-pushback-html/pdfs/GGates/G8.pdf">G8</option> 
+        <option value="C:/NL-pushback-html/pdfs/GGates/G9tmCat4.pdf">G9 tm Cat.4</option> 
+        <option value="C:/NL-pushback-html/pdfs/GGates/G9vanafCat5.pdf">G9 vanaf Cat.5</option> 
+        <option value="C:/NL-pushback-html/pdfs/GGates/G71.pdf">G71</option> 
+        <option value="C:/NL-pushback-html/pdfs/GGates/G73tmCat4.pdf">G73 tm Cat.4</option> 
+        <option value="C:/NL-pushback-html/pdfs/GGates/G73vanafCat5.pdf">G73 vanaf Cat.5</option> 
+        <option value="C:/NL-pushback-html/pdfs/GGates/G76tmCat4.pdf">G76 tm Cat.4</option> 
+        <option value="C:/NL-pushback-html/pdfs/GGates/G76vanafCat5.pdf">G76 vanaf Cat.5</option> 
+        <option value="C:/NL-pushback-html/pdfs/GGates/G79tmCat4.pdf">G79 tm Cat.4</option> 
+        <option value="C:/NL-pushback-html/pdfs/GGates/G79vanafCat5.pdf">G79 vanaf Cat.5</option> 
+    </select>
+  </p>
+  <p id="demo"></p>
+  <embed id="pdf" src="C:/NL-pushback-html/pdfs/GGates/G2.pdf" width="90%" height="1200"></embed>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("G Gates").value;
+      document.getElementById("pdf").src = x;
+    }
+    function loadPage()
+    {
+
+        window.location="C:\NL-pushback-html/main.html";
+
+    }
+  </script>
+</body>
+</html>

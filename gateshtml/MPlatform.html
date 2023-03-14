@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" content="notranslate">
+<head>
+  <title>Dutch Airport Pushback Procedures</title>
+  <meta name="description" content="Our first page">
+  <meta name="keywords" content=" ">
+  <meta name="google" content="notranslate" > 
+</head>
+<body bgcolor="#989898">
+  <p><input type = "button" id = "btnApply" value = "Go Back" onclick="loadPage()"></p>
+  <p>
+    <label for="M Platform">Choose a platform:</label>
+    <select name="M Platform" id="M Platform" onchange="myFunction()">
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M53.pdf">M53</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M55.pdf">M55</option> 
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M57.pdf">M57</option> 
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M59.pdf">M59</option>  
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M61.pdf">M61</option> 
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M62.pdf">M62</option> 
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M63.pdf">M63</option> 
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M65.pdf">M65</option> 
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M66.pdf">M66</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M67.pdf">M67</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M69.pdf">M69</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M70.pdf">M70</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M71.pdf">M71</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M73.pdf">M73</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M74.pdf">M74</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M75.pdf">M75</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M77.pdf">M77</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M78.pdf">M78</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M79.pdf">M79</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M81.pdf">M81</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M83.pdf">M83</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M84.pdf">M84</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M85.pdf">M85</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M87.pdf">M87</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M88.pdf">M88</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M89.pdf">M89</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M91.pdf">M91</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M92.pdf">M92</option>
+        <option value="C:/NL-pushback-html/pdfs/MPlatform/M93.pdf">M93</option> 
+    </select>
+  </p>
+  <p id="demo"></p>
+  <embed id="pdf" src="C:/NL-pushback-html/pdfs/MPlatform/M53.pdf" width="90%" height="1200"></embed>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("M Platform").value;
+      document.getElementById("pdf").src = x;
+    }
+    function loadPage()
+    {
+
+        window.location="C:\NL-pushback-html/main.html";
+
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" content="notranslate">
+<head>
+  <title>Dutch Airport Pushback Procedures</title>
+  <meta name="description" content="Our first page">
+  <meta name="keywords" content=" ">
+  <meta name="google" content="notranslate" > 
+</head>
+<body bgcolor="#989898">
+  <p><input type = "button" id = "btnApply" value = "Go Back" onclick="loadPage()"></p>
+  <p>
+    <label for="F Gates">Choose a gate:</label>
+    <select name="F Gates" id="F Gates" onchange="myFunction()">
+        <option value="C:/NL-pushback-html/pdfs/FGates/F3.pdf">F3</option>
+        <option value="C:/NL-pushback-html/pdfs/FGates/F4tmCat4.pdf">F4 tm Cat.4</option> 
+        <option value="C:/NL-pushback-html/pdfs/FGates/F4vanafCat5.pdf">F4 vanaf Cat.5</option> 
+        <option value="C:/NL-pushback-html/pdfs/FGates/F5.pdf">F5</option>  
+        <option value="C:/NL-pushback-html/pdfs/FGates/F6tmCat4.pdf">F6 tm Cat.4</option> 
+        <option value="C:/NL-pushback-html/pdfs/FGates/F6vanafCat5.pdf">F6 vanaf Cat.5</option> 
+        <option value="C:/NL-pushback-html/pdfs/FGates/F7.pdf">F7</option> 
+        <option value="C:/NL-pushback-html/pdfs/FGates/F8.pdf">F8</option> 
+        <option value="C:/NL-pushback-html/pdfs/FGates/F9.pdf">F9</option> 
+    </select>
+  </p>
+  <p id="demo"></p>
+  <embed id="pdf" src="C:/NL-pushback-html/pdfs/FGates/F3.pdf" width="90%" height="1200"></embed>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("F Gates").value;
+      document.getElementById("pdf").src = x;
+    }
+    function loadPage()
+    {
+
+        window.location="C:\NL-pushback-html/main.html";
+
+    }
+  </script>
+</body>
+</html>

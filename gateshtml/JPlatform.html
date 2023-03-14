@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" content="notranslate">
+<head>
+  <title>Dutch Airport Pushback Procedures</title>
+  <meta name="description" content="Our first page">
+  <meta name="keywords" content=" ">
+  <meta name="google" content="notranslate" > 
+</head>
+<body bgcolor="#989898">
+  <p><input type = "button" id = "btnApply" value = "Go Back" onclick="loadPage()"></p>
+  <p>
+    <label for="J Platform">Choose a platform:</label>
+    <select name="J Platform" id="J Platform" onchange="myFunction()">
+        <option value="C:/NL-pushback-html/pdfs/JPlatform/J80.pdf">J80</option>
+        <option value="C:/NL-pushback-html/pdfs/JPlatform/J81.pdf">J81</option> 
+        <option value="C:/NL-pushback-html/pdfs/JPlatform/J82.pdf">J82</option> 
+        <option value="C:/NL-pushback-html/pdfs/JPlatform/J83.pdf">J83</option>  
+        <option value="C:/NL-pushback-html/pdfs/JPlatform/J84.pdf">J84</option> 
+        <option value="C:/NL-pushback-html/pdfs/JPlatform/J85.pdf">J85</option> 
+        <option value="C:/NL-pushback-html/pdfs/JPlatform/J86.pdf">J86</option> 
+        <option value="C:/NL-pushback-html/pdfs/JPlatform/J87.pdf">J87</option> 
+    </select>
+  </p>
+  <p id="demo"></p>
+  <embed id="pdf" src="C:/NL-pushback-html/pdfs/JPlatform/J80.pdf" width="90%" height="1200"></embed>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("J Platform").value;
+      document.getElementById("pdf").src = x;
+    }
+    function loadPage()
+    {
+
+        window.location="C:\NL-pushback-html/main.html";
+
+    }
+  </script>
+</body>
+</html>

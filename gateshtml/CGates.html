@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" content="notranslate">
+<head>
+  <title>Dutch Airport Pushback Procedures</title>
+  <meta name="description" content="Our first page">
+  <meta name="keywords" content=" ">
+  <meta name="google" content="notranslate" > 
+</head>
+<body bgcolor="#989898">
+  <p><input type = "button" id = "btnApply" value = "Go Back" onclick="loadPage()"></p>
+  <p>
+    <label for="C Gates">Choose a gate:</label>
+    <select name="C Gates" id="C Gates" onchange="myFunction()">
+        <option value="C:/NL-pushback-html/pdfs/CGates/C5B757.pdf">C5 B757</option>
+        <option value="C:/NL-pushback-html/pdfs/CGates/C5tmCat4.pdf">C5 tm Cat.4</option> 
+        <option value="C:/NL-pushback-html/pdfs/CGates/C6.pdf">C6</option> 
+        <option value="C:/NL-pushback-html/pdfs/CGates/C7tmCat4.pdf">C7 tm Cat.4</option>  
+        <option value="C:/NL-pushback-html/pdfs/CGates/C7B757.pdf">C7 B757</option> 
+        <option value="C:/NL-pushback-html/pdfs/CGates/C8.pdf">C8</option> 
+        <option value="C:/NL-pushback-html/pdfs/CGates/C9B757.pdf">C9 B757</option> 
+        <option value="C:/NL-pushback-html/pdfs/CGates/C9tmCat4.pdf">C9 tm Cat.4</option> 
+        <option value="C:/NL-pushback-html/pdfs/CGates/C10.pdf">C10</option> 
+        <option value="C:/NL-pushback-html/pdfs/CGates/C11.pdf">C11</option> 
+        <option value="C:/NL-pushback-html/pdfs/CGates/C12.pdf">C12</option> 
+        <option value="C:/NL-pushback-html/pdfs/CGates/C13.pdf">C13</option> 
+        <option value="C:/NL-pushback-html/pdfs/CGates/C14.pdf">C14</option> 
+        <option value="C:/NL-pushback-html/pdfs/CGates/C15.pdf">C15</option> 
+        <option value="C:/NL-pushback-html/pdfs/CGates/C16.pdf">C16</option> 
+        <option value="C:/NL-pushback-html/pdfs/CGates/C18.pdf">C18</option> 
+    </select>
+  </p>
+  <p id="demo"></p>
+  <embed id="pdf" src="C:/NL-pushback-html/pdfs/CGates/C5B757.pdf" width="90%" height="1200"></embed>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("C Gates").value;
+      document.getElementById("pdf").src = x;
+    }
+    function loadPage()
+    {
+
+        window.location="C:\NL-pushback-html/main.html";
+
+    }
+  </script>
+</body>
+</html>

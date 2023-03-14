@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" content="notranslate">
+<head>
+  <title>Dutch Airport Pushback Procedures</title>
+  <meta name="description" content="Our first page">
+  <meta name="keywords" content=" ">
+  <meta name="google" content="notranslate" > 
+</head>
+<body bgcolor="#989898">
+  <p><input type = "button" id = "btnApply" value = "Go Back" onclick="loadPage()"></p>
+  <p>
+    <label for="E Gates">Choose a gate:</label>
+    <select name="E Gates" id="E Gates" onchange="myFunction()">
+        <option value="C:/NL-pushback-html/pdfs/EGates/E2.pdf">E2</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E3tmCat4.pdf">E3 tm Cat.4</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E3vanafCat5.pdf">E3 vanaf Cat.5</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E4.pdf">E4</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E5tmCat4.pdf">E5 tm Cat.4</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E5vanafCat5.pdf">E5 vanaf Cat.5</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E6tmCat4.pdf">E6 tm Cat.4</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E6vanafCat5.pdf">E6 vanaf Cat.6</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E7tmCat4.pdf">E7 tm Cat.4</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E7vanafCat5.pdf">E7 vanaf Cat.5</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E8tmCat4.pdf">E8 tm Cat.4</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E8vanafCat5.pdf">E8 vanaf Cat.5</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E9tmCat4.pdf">E9 tm Cat.4</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E9vanafCat5.pdf">E9 vanaf Cat.5</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E17.pdf">E17</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E18tmCat4.pdf">E18 tm Cat.4</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E18vanafCat5.pdf">E18 vanaf Cat.5</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E19.pdf">E19</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E20.pdf">E20</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E22.pdf">E22</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E24.pdf">E24</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E72.pdf">E72</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E75.pdf">E75</option>
+        <option value="C:/NL-pushback-html/pdfs/EGates/E77.pdf">E77</option>
+    </select>
+  </p>
+  <p id="demo"></p>
+  <embed id="pdf" src="C:/NL-pushback-html/pdfs/EGates/E2.pdf" width="90%" height="1200"></embed>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("E Gates").value;
+      document.getElementById("pdf").src = x;
+    }
+    function loadPage()
+    {
+
+        window.location="C:\NL-pushback-html/main.html";
+
+    }
+  </script>
+</body>
+</html>

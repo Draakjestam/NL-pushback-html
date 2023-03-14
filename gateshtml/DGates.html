@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" content="notranslate">
+<head>
+  <title>Dutch Airport Pushback Procedures</title>
+  <meta name="description" content="Our first page">
+  <meta name="keywords" content=" ">
+  <meta name="google" content="notranslate" > 
+</head>
+<body bgcolor="#989898">
+  <p><input type = "button" id = "btnApply" value = "Go Back" onclick="loadPage()"></p>
+  <p>
+    <label for="D Gates">Choose a gate:</label>
+    <select name="D Gates" id="D Gates" onchange="myFunction()">
+        <option value="C:/NL-pushback-html/pdfs/DGates/D2tmCat4.pdf">D2 tm Cat.4</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D2vanafCat5.pdf">D2 vanaf Cat.5</option> 
+        <option value="C:/NL-pushback-html/pdfs/DGates/D3.pdf">D3</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D4tmCat4.pdf">D4 tm Cat.4</option>  
+        <option value="C:/NL-pushback-html/pdfs/DGates/D4vanafCat5.pdf">D4 vanaf Cat.5</option> 
+        <option value="C:/NL-pushback-html/pdfs/DGates/D5.pdf">D5</option> 
+        <option value="C:/NL-pushback-html/pdfs/DGates/D7tmCat4.pdf">D7 tm Cat.4</option> 
+        <option value="C:/NL-pushback-html/pdfs/DGates/D7vanafCat5.pdf">D7 vanaf Cat.5</option> 
+        <option value="C:/NL-pushback-html/pdfs/DGates/D10.pdf">D10</option> 
+        <option value="C:/NL-pushback-html/pdfs/DGates/D12.pdf">D12</option> 
+        <option value="C:/NL-pushback-html/pdfs/DGates/D14.pdf">D14</option> 
+        <option value="C:/NL-pushback-html/pdfs/DGates/D16.pdf">D16</option> 
+        <option value="C:/NL-pushback-html/pdfs/DGates/D18.pdf">D18</option> 
+        <option value="C:/NL-pushback-html/pdfs/DGates/D22.pdf">D22</option> 
+        <option value="C:/NL-pushback-html/pdfs/DGates/D23.pdf">D23</option> 
+        <option value="C:/NL-pushback-html/pdfs/DGates/D243.pdf">D24</option> 
+        <option value="C:/NL-pushback-html/pdfs/DGates/D25.pdf">D25</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D26.pdf">D26</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D27.pdf">D27</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D28.pdf">D28</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D29.pdf">D29</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D31.pdf">D31</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D41.pdf">D41</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D43tmCat4.pdf">D43 tm Cat.4</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D43vanafCat5.pdf">D43 vanaf Cat.5</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D44.pdf">D44</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D47.pdf">D47</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D48.pdf">D48</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D49.pdf">D49</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D51.pdf">D51</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D52.pdf">D52</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D53.pdf">D53</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D54.pdf">D54</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D55.pdf">D55</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D56.pdf">D56</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D57.pdf">D57</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D88.pdf">D88</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D90.pdf">D90</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D92.pdf">D92</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D93.pdf">D93</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D94.pdf">D94</option>
+        <option value="C:/NL-pushback-html/pdfs/DGates/D95.pdf">D95</option>
+    </select>
+  </p>
+  <p id="demo"></p>
+  <embed id="pdf" src="C:/NL-pushback-html/pdfs/DGates/D2tmCat4.pdf" width="90%" height="1200"></embed>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("D Gates").value;
+      document.getElementById("pdf").src = x;
+    }
+    function loadPage()
+    {
+
+        window.location="C:\NL-pushback-html/main.html";
+
+    }
+  </script>
+</body>
+</html>

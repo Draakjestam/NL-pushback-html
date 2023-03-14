@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" content="notranslate">
+<head>
+  <title>Dutch Airport Pushback Procedures</title>
+  <meta name="description" content="Our first page">
+  <meta name="keywords" content=" ">
+  <meta name="google" content="notranslate" > 
+</head>
+<body bgcolor="#989898">
+  <p><input type = "button" id = "btnApply" value = "Go Back" onclick="loadPage()"></p>
+  <p>
+    <label for="S Platform">Choose a platform:</label>
+    <select name="S Platform" id="S Platform" onchange="myFunction()">
+        <option value="C:/NL-pushback-html/pdfs/SPlatofrm/S41tmS52.pdf">S41 tm S52</option>
+        <option value="C:/NL-pushback-html/pdfs/SPlatform/S66.pdf">S66</option> 
+        <option value="C:/NL-pushback-html/pdfs/SPlatform/S67.pdf">S67</option> 
+        <option value="C:/NL-pushback-html/pdfs/SPlatform/S68.pdf">S68</option>  
+        <option value="C:/NL-pushback-html/pdfs/SPlatform/S69.pdf">S69</option> 
+        <option value="C:/NL-pushback-html/pdfs/SPlatform/S72.pdf">S72</option> 
+        <option value="C:/NL-pushback-html/pdfs/SPlatform/S74.pdf">S74</option> 
+        <option value="C:/NL-pushback-html/pdfs/SPlatform/S77.pdf">S77</option> 
+        <option value="C:/NL-pushback-html/pdfs/SPlatform/S79.pdf">S79</option>
+        <option value="C:/NL-pushback-html/pdfs/SPlatform/S82.pdf">S82</option>
+        <option value="C:/NL-pushback-html/pdfs/SPlatform/S84.pdf">S84</option>
+        <option value="C:/NL-pushback-html/pdfs/SPlatform/S87.pdf">S87</option>
+        <option value="C:/NL-pushback-html/pdfs/SPlatform/S90.pdf">S90</option>
+        <option value="C:/NL-pushback-html/pdfs/SPlatform/S92.pdf">S92</option>
+        <option value="C:/NL-pushback-html/pdfs/SPlatform/S94.pdf">S94</option>
+        <option value="C:/NL-pushback-html/pdfs/SPlatform/S96.pdf">S96</option>   
+    </select>
+  </p>
+  <p id="demo"></p>
+  <embed id="pdf" src="C:/NL-pushback-html/pdfs/SPlatform/S41tmS52.pdf" width="90%" height="1200"></embed>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("S Platform").value;
+      document.getElementById("pdf").src = x;
+    }
+    function loadPage()
+    {
+
+        window.location="C:\NL-pushback-html/main.html";
+
+    }
+  </script>
+</body>
+</html>

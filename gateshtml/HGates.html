@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" content="notranslate">
+<head>
+  <title>Dutch Airport Pushback Procedures</title>
+  <meta name="description" content="Our first page">
+  <meta name="keywords" content=" ">
+  <meta name="google" content="notranslate" > 
+</head>
+<body bgcolor="#989898">
+  <p><input type = "button" id = "btnApply" value = "Go Back" onclick="loadPage()"></p>
+  <p>
+    <label for="H Gates">Choose a gate:</label>
+    <select name="H Gates" id="H Gates" onchange="myFunction()">
+        <option value="C:/NL-pushback-html/pdfs/HGates/H1.pdf">H1</option>
+        <option value="C:/NL-pushback-html/pdfs/HGates/H2.pdf">H2</option> 
+        <option value="C:/NL-pushback-html/pdfs/HGates/H3.pdf">H3</option> 
+        <option value="C:/NL-pushback-html/pdfs/HGates/H4.pdf">H4</option>  
+        <option value="C:/NL-pushback-html/pdfs/HGates/H5.pdf">H5</option> 
+        <option value="C:/NL-pushback-html/pdfs/HGates/H6.pdf">H6</option> 
+        <option value="C:/NL-pushback-html/pdfs/HGates/H7.pdf">H7</option> 
+    </select>
+  </p>
+  <p id="demo"></p>
+  <embed id="pdf" src="C:/NL-pushback-html/pdfs/HGates/H1.pdf" width="90%" height="1200"></embed>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("H Gates").value;
+      document.getElementById("pdf").src = x;
+    }
+    function loadPage()
+    {
+
+        window.location="C:\NL-pushback-html/main.html";
+
+    }
+  </script>
+</body>
+</html>
